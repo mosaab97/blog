@@ -1,0 +1,3 @@
+export const SET_LOADING = "SET_LOADING"
+export const SAVE_STATE = "SAVE_STATE"
+export const SET_LOADING_FALSE = "SET_LOADING_FALSE"
