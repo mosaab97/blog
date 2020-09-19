@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import { withRouter } from 'react-router-dom'
 import BlogContext from '../../context/blogContext/BlogContext'
-import { isNullOrEmptyOrUndifind } from '../helper/helper'
 import StoryDialog from './StoryDialog'
 import './BlogPage.css'
 

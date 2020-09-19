@@ -61,6 +61,7 @@ const MainState = (props) => {
         setSnackBarMsg({msg: "Email/Password is not correct"})
         setOpen(true)
     }
+    setLoadingFalse()
   }
 
   const signUp = async (payload) => {
@@ -80,9 +81,11 @@ const MainState = (props) => {
         setSnackBarMsg({msg: "Somthing went wrong, please try again"})
         setOpen(true)
     }
+    setLoadingFalse()
   }
 
   const getUserData = async () => {
+    setLoading()
     try {
       const res = await getUserDataApi()
       setLoading()

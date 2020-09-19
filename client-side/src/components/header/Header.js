@@ -58,14 +58,11 @@ const Header = (props) => {
             </>
             :
             <>
-            {mainState.userResponse && mainState.userResponse.userType === 1 ?
-            <Button color="inherit" onClick={() => changeRoute('/admin')}>Admin Page</Button>
-            :
-            <Button color="inherit" onClick={() => setOpenCreateDialog(true)}>Create Blog</Button>}
-            <Button color="inherit" onClick={() => {
-              localStorage.setItem('token', "")
-              changeRoute('/')
-            }}>Logout</Button>
+              <Button color="inherit" onClick={() => setOpenCreateDialog(true)}>Create Blog</Button>
+              <Button color="inherit" onClick={() => {
+                localStorage.setItem('token', "")
+                changeRoute('/')
+              }}>Logout</Button>
             </>
           }
         </Toolbar>
