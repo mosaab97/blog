@@ -150,7 +150,9 @@ const SignUp = (props) => {
               select
               label="Select"
               value={signUpData.userType}
-              onChange={handleChange}
+              onChange={(e) => {
+                setSignUpData({...setSignUpData, userType: e.target.value})
+              }}
               helperText="Please select your currency"
             >
                 <MenuItem key={1} value={1}>
